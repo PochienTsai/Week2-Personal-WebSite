@@ -1,0 +1,480 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 下列這段作法為寬度＆高度設定多少,border box就是多少 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* 邊框區塊 */
+}
+
+img {
+  vertical-align: middle;
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'Bruno Ace SC', cursive, 'Noto Sans TC', sans-serif;
+}
+
+.fs-s {
+  font-size: 1.25rem;
+  /* 20px */
+}
+
+.fs-m {
+  font-size: 1.5rem;
+  /* 24px */
+}
+
+.fs-l {
+  font-size: 4rem;
+  /* 64px */
+}
+
+.fs-sl {
+  font-size: 8rem;
+  /* 128px */
+}
+
+.tc-white {
+  color: #FFFFFF;
+}
+
+.tc-green {
+  color: #00FFA3;
+}
+
+.tc-gray {
+  color: #D1D1D1;
+}
+
+.tc-black {
+  color: #000000;
+}
+
+.tc-black-2 {
+  color: #15161D;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.nav-a-width-306 {
+  width: 306px;
+}
+
+.nav-a-width-196 {
+  width: 196px;
+}
+
+.nav-a-heigh-24 {
+  height: 24px;
+}
+
+.nav-a-heigh-48 {
+  height: 48px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mr-61 {
+  margin-right: 61px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+.ta-l {
+  text-align: left;
+}
+
+.ta-r {
+  text-align: right;
+}
+
+.container {
+  width: 1296px;
+  margin: 0 auto;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.people {
+  margin-top: 72px;
+  margin-bottom: 72px;
+  margin-right: 24px;
+}
+
+.bounding-box {
+  display: inline-block;
+  border-radius: 32px;
+  /* 設定圓角 */
+  text-decoration: none;
+  /* 移除連結的底線效果 */
+}
+
+.title {
+  margin-top: 232px;
+  margin-bottom: 232px;
+}
+
+.title a {
+  margin-left: 451px;
+}
+
+.title a span {
+  margin-left: 24px;
+  margin-right: 4px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.title a img {
+  margin-right: 12px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.bg-img {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 920px;
+}
+
+.introduction {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-left {
+  margin-top: 160px;
+  margin-bottom: 318px;
+  margin-right: 24px;
+}
+
+.section-left h3 {
+  margin-bottom: 36px;
+}
+
+.section-left p {
+  margin-bottom: 32px;
+}
+
+.section-left img {
+  margin-right: 398px;
+}
+
+.section-right {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 160px;
+  margin-bottom: 160px;
+}
+
+.section-right img {
+  margin-right: 24px;
+}
+
+.section-right img:last-child {
+  margin-right: 0;
+}
+
+.about-me {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 206px;
+  margin-bottom: 206px;
+  margin-right: 134px;
+  width: 636px;
+}
+
+.card-item {
+  border: 1px solid #E3E3E3;
+  width: 306px;
+}
+
+.about-me-intro {
+  margin-top: 160px;
+  margin-bottom: 160px;
+  width: 526px;
+}
+
+.about-me-intro h3 {
+  margin-bottom: 36px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info {
+  margin-right: 113px;
+  /* width: 657px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info span {
+  margin-right: 16px;
+  margin-top: 129px;
+  margin-bottom: 129px;
+}
+
+.contact-info img {
+  margin-right: 16px;
+  margin-top: 129px;
+  margin-bottom: 129px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+
+.social-media img {
+  margin-right: 20px;
+  width: 162px;
+  height: 162px;
+}
+
+.social-media img:last-child {
+  margin-right: 0;
+}
+
+.project h3 {
+  margin-top: 160px;
+  margin-bottom: 16px;
+}
+
+.project-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 160px;
+}
+
+.project-info-left {
+  margin-right: 24px;
+}
+
+.project-info-intro {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.project-info-intro img {
+  margin-right: 24px;
+}
+
+.project-info-intro-detail p {
+  margin-bottom: 76px;
+}
+
+.project-info-intro-detail a span {
+  margin-left: 24px;
+  margin-right: 4px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.project-info-intro-detail a img {
+  margin-right: 12px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.footer p {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
